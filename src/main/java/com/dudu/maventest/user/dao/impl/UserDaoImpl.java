@@ -24,5 +24,21 @@ public class UserDaoImpl implements UserDao{
          
         return sqlSession.selectList("getUserList");
     }
+    
+    @Override
+    public void insertUser(User user) {
+    	
+    }
+    
+    @Override
+    public void deleteUser(User user) {
+    	
+    }
+    
+    @Override
+    public void updateUser(User user) {
+    	
+    }
+
 
 }

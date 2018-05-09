@@ -33,7 +33,11 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+//		return "home";
+		//user로 던지기
+		//list value 안나옴 찾아서 수정해야함
+		return "/user/user";
 	}
 	
 }
+

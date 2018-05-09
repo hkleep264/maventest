@@ -14,4 +14,33 @@
         FROM
             tbl_users
     </select>
+    
+    <insert id="insertUser">
+        insert into tbl_users
+        ( id,pass,NAME,age,pnum,address )
+        values
+        ( #{id},#{pass},#{name},#{age},#{pnum},#{address} )
+    </insert>
+    
+	<delete id="deleteUser">
+
+		delete 
+		FROM tbl_users 
+		where id=#{id}
+
+	</delete>
+
+	
+
+	<update id="updateUser">
+
+		update tbl_users
+
+		set pwd = #{pass},name = #{name},pnum = #{pnum}
+
+		where id = #{id}
+
+	</update>
+
+
 </mapper>

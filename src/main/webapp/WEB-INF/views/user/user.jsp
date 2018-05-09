@@ -19,6 +19,7 @@
         <td width="200px">주소</td>
         <td width="200px">가입날짜</td>
     </tr>
+    <!-- for문 List 반복 -->
 <c:forEach var="user" items="${users}">
     <tr align="center">
         <td>${user.id}</td>
@@ -32,4 +33,9 @@
 </c:forEach>
 </table>
 </body>
+
+<button>refresh</button>
+<button onclick="location='signup.jsp'">회원가입</button>
+<button>delete</button>
+<button>update</button>
 </html>
